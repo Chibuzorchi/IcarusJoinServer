@@ -10,6 +10,7 @@ test.describe('Join Icarus', () => {
             }
         });
 
+        
         expect(response.status()).toBe(201);
         const responseBody = await response.json();
         expect(responseBody.message).toBe('User joined successfully');
